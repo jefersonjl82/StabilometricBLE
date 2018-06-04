@@ -1,5 +1,5 @@
 # StabilometricBLE
-Apk to read a accelerometer data about stabilometric Sensor
+Apk to read a accelerometer data
 
 
 <img src="res/screen.jpeg" width="200">
