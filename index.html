@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+	Description:
+
+	BLE example application that demonstrates how to read values
+	from the TI SensorTag.
+
+	Requirements:
+
+	See text in the app user interface.
+-->
+<html lang="pt-br">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>TI SensorTag CC2650 Demo</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+	</style>
+
+	<script>
+	// Redirect console.log to Evothings Workbench.
+	if (window.hyper && window.hyper.log) { console.log = hyper.log }
+	</script>
+
+	<script src="cordova.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="libs/evothings/easyble/easyble.js"></script>
+	<script src="app.js"></script>
+
+</head>
+
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+
+	<header>
+		<button class="back" onclick="history.back()">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/logo.svg" alt="TechBalance" />
+
+		<button id="menu-button" tabindex="0" onclick="this.focus()">
+			<img src="ui/images/menu.svg" />
+		</button>
+
+		<menu>
+			<menuitem>
+				<a href="#">Teste Estabilidade</a>
+			</menuitem>
+
+			<menuitem>
+				<a href="#information">Informações</a>
+			</menuitem>
+		</menu>
+	</header>
+
+	<h1>Teste de Estabilometria</h1>
+
+	<p id="info">Not Connected</p>
+
+	<button onclick="app.onStartButton()" class="green">Iniciar</button>
+	<button onclick="app.onStopButton()" class="red">Parar</button>
+
+	<canvas id="canvas" width="250" height="250"></canvas>
+
+	<section id='information'>
+
+		<h2>Info</h2>
+
+		<p>
+			Resumo
+		</p>
+
+		<h2>Como Usar</h2>
+
+		<p>
+			...
+		</p>
+
+		<h2>Como ativar sensor</h2>
+
+		<p>
+			...
+		</p>
+
+	</section>
+
+</body>
+
+</html>
